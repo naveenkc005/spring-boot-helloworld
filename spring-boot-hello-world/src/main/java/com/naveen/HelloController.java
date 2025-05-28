@@ -8,7 +8,13 @@ public class HelloController {
 
     @RequestMapping("/")
     String hello() {
-        return "Hello World, Spring Boot!";
+        return "Hello World, Spring Boot! Naveen suriya";
     }
+    @RequestMapping("/teja/")
+  public  String  teja(){
+
+      return "teja";
+  }
+
 
 }

@@ -18,7 +18,13 @@ public class HelloControllerTest {
     @Test
     public void hello_ok() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/", String.class);
-        assertThat(response.getBody()).isEqualTo("Hello World, Spring Boot!");
+        assertThat(response.getBody()).isEqualTo("Hello World, Spring Boot! Naveen suriya");
     }
+    @Test
+    public void hello_ok_teja() throws Exception {
+        ResponseEntity<String> response = template.getForEntity("/teja/", String.class);
+        assertThat(response.getBody()).isEqualTo("teja");
+    }
+
 
 }
